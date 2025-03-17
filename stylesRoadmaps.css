@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-radius: 0.75rem;
+  --btn-color: #617afa;
+  --primary-color: #fafafa;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  background-color: #1c1c21;
+  color: var(--primary-color);
+  font-family: "Teko", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus-visible {
+    outline: 0.125rem dotted #617afa;
+  }
+}
+
+p {
+  max-inline-size: 25rem;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button__padding--std {
+  padding: 0.5625rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.font__size--16 {
+  font-size: 1rem;
+}
+
+.gap--2 {
+  gap: 0.125rem;
+}
+
+.gap--16 {
+  gap: 1rem;
+}
+
+.gap--26 {
+  gap: 1.625rem;
+}
+
+.gap--34 {
+  gap: 2.125rem;
+}
+
+.padding__right--40 {
+  padding-right: 2.5rem;
+}
+
+.pad-left {
+  padding-left: 4.6875rem;
+}
+
+header {
+  padding: 0.75rem 2.5rem;
+}
+
+.logo__homepage {
+  max-inline-size: 2.1875rem;
+}
+
+.btn {
+  border-radius: var(--border-radius);
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--primary-color);
+}
+
+.btn__signup {
+  min-inline-size: 4.6875rem;
+  min-block-size: 2.5rem;
+  padding: 0.5625rem 1.125rem;
+}
+
+.border {
+  border-top: 0.125rem solid #888787;
+  margin-bottom: 2.25rem;
+}
+
+.border__center {
+  border-top: 0.125rem solid #888787;
+  margin: 6.25rem 0;
+  width: 50%;
+}
+
+.btn__startn0w {
+  min-inline-size: 8.5rem;
+  min-block-size: 2.375rem;
+  padding: 0.3125rem 4.375rem;
+  font-size: 1.25rem;
+}
+
+.brd__footer {
+  margin-top: 5.625rem;
+  margin-bottom: 0rem;
+}
+
+footer {
+  margin-top: 0;
+  padding: 0 0.9375rem;
+}
+
+.code__square {
+  max-inline-size: 2.1875rem;
+}
+
+.star__rate {
+  max-inline-size: 0.6875rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav__links__mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 48rem) {
+  header {
+    display: flex;
+    gap: 3.125rem;
+  }
+  .nav__links {
+    display: none;
+  }
+
+  .nav__item {
+    display: none;
+  }
+
+  .nav__links__mobile {
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 0;
+  }
+
+  .border {
+    min-inline-size: 30.3125rem;
+  }
+
+  .individual__courses {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    padding-left: 2.1875rem;
+  }
+
+  .narrow {
+    padding-left: 2.1875rem;
+  }
+
+  .pad-left {
+    padding-left: 3.4375rem;
+  }
+
+  .brd__footer {
+    margin-top: 2.25rem;
+    margin-bottom: 0rem;
+    min-inline-size: 30.3125rem;
+  }
+
+  footer {
+    min-inline-size: 30rem;
+  }
+
+  .border__center {
+    border-top: 0.125rem solid #888787;
+    margin: 6.25rem 0 6.25rem 2.8125rem;
+    width: 50%;
+  }
+
+  footer > div > ul{
+    gap:2px;
+  }
+}

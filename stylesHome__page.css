@@ -1,0 +1,493 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-radius: 0.75rem;
+  --btn-color: #617afa;
+  --primary-color: #fafafa;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vh;
+  background-color: #1c1c21;
+  color: var(--primary-color);
+  font-family: "Teko", sans-serif;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus-visible {
+    outline: 2px dotted #617afa;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  color: #617afa;
+}
+
+.button__padding--std {
+  padding: 0.5625rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gridr0w {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.gridc0lumn {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.items-center {
+  justify-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.block {
+  display: block;
+}
+
+.text--end {
+  text-align: end;
+}
+
+.gap--34 {
+  gap: 2.125rem;
+}
+
+.gap--16 {
+  gap: 1rem;
+}
+
+.gap--20 {
+  gap: 1.25rem;
+}
+
+.gap--30 {
+  gap: 1.875rem;
+}
+
+.padding__top__left--30-10 {
+  padding-top: 1.875rem;
+  padding-right: 0.625rem;
+}
+
+.padding__hvw--16 {
+  padding: 0.4375rem 1rem;
+}
+
+.margin__top--12 {
+  margin-top: 20px;
+}
+
+.padding__right--217 {
+  padding-right: 13.5625rem;
+}
+
+.padding__right--40 {
+  padding-right: 2.5rem;
+}
+
+.pad-left {
+  padding-left: 4.6875rem;
+}
+
+.margin__bottom--0 {
+  margin-bottom: 0;
+}
+
+header {
+  padding: 0.75rem 2.5rem;
+}
+
+.logo__homepage {
+  max-inline-size: 2.1875rem;
+}
+
+.btn {
+  border-radius: var(--border-radius);
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--primary-color);
+}
+
+.btn__signup {
+  min-inline-size: 4.6875rem;
+  min-block-size: 2.5rem;
+  padding: 0.5625rem 1.125rem;
+}
+
+.border {
+  border-top: 0.125rem solid #888787;
+  margin-bottom: 2.25rem;
+}
+
+.hero {
+  inline-size: 59.375rem;
+  block-size: 31.25rem;
+  background-image: url(./Assets/main__picture.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 8.125rem;
+}
+
+.hero__title {
+  font-size: 45px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.btn__startn0w {
+  min-inline-size: 9.125rem;
+  min-block-size: 3rem;
+  padding: 0.8125rem 2.5rem;
+  font-size: 1.25rem;
+}
+
+.courses {
+  padding: 3.125rem;
+  max-block-size: 23.4375rem;
+}
+
+.projects {
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.html5,
+.css,
+.js,
+.py,
+.java,
+.php,
+.csharp {
+  background-color: white;
+  color: #1c1c21;
+  border-radius: 0.5rem;
+  padding-left: 0.3125rem;
+  min-block-size: 17.5rem;
+}
+
+.html__website,
+.img__grid__layout,
+.weather__web__app,
+.ecommerce__api,
+.img__upload,
+.calculator__app,
+.library__mng__sys,
+.blog__card {
+  background-color: white;
+  color: #1c1c21;
+  border-radius: 0.5rem;
+  padding: 0.3125rem;
+  block-size: 9.375rem;
+
+  &:hover {
+    background-color: #617afa;
+    color: var(--primary-color);
+  }
+}
+
+.js {
+  background-color: white;
+  color: #1c1c21;
+  border-radius: 0.5rem;
+  padding: 0.3125rem;
+}
+
+.html5__img,
+.css__img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.btn__card {
+  padding: 0.1875rem 0.375rem;
+}
+
+.cardbtn__container {
+  padding-top: 1.75rem;
+  padding-left: 2.5rem;
+}
+
+.cardbtn__container__csharp {
+  padding-top: 1.25rem;
+  padding-left: 1.875rem;
+}
+
+.cardbtn__container__js {
+  padding-top: 1.75rem;
+  padding-left: 3.625rem;
+}
+
+.js__img {
+  border-radius: 0.5rem;
+  margin-bottom: 0.1875rem;
+}
+
+.py__img {
+  max-inline-size: 8rem;
+  max-block-size: 8rem;
+  margin-bottom: 0.625rem;
+}
+
+.csharp__img {
+  max-inline-size: 8rem;
+  max-block-size: 8rem;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
+}
+
+.cardbtn__container__py,
+.cardbtn__container__java,
+.cardbtn__container__php {
+  padding-top: 1.25rem;
+  padding-left: 2.5rem;
+}
+
+.btn__card__container {
+  text-align: center;
+}
+
+.btn__card__end {
+  padding: 0.375rem 0.75rem;
+}
+
+.brd__footer {
+  margin-top: 5.625rem;
+  margin-bottom: 0rem;
+}
+
+footer {
+  margin-top: 0;
+  padding: 0 0.9375rem;
+}
+
+.nav__links__mobile {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) and (max-width: 77.5rem) {
+  .courses__projects__container {
+    gap: 9.375rem;
+  }
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  header {
+    display: flex;
+    gap: 3.125rem;
+  }
+  .nav__links {
+    display: none;
+  }
+
+  .nav__item {
+    display: none;
+  }
+
+  .nav__links__mobile {
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 0;
+  }
+
+  .border {
+    max-inline-size: 31.25rem;
+  }
+
+  .first__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .hero {
+    max-inline-size: 31.25rem;
+    block-size: 16.875rem;
+    background-image: url(./Assets/main__picture-300-web.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .btn__startn0w {
+    min-inline-size: 6.625rem;
+    min-block-size: 2.375rem;
+    padding: 0.5rem 3.125rem;
+    font-size: 1.125rem;
+  }
+
+  .courses__projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 21.875rem;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem 0 0.625rem 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .css,
+  .java,
+  .php {
+    display: none;
+  }
+
+  .html5 {
+    display: flex;
+    background-color: white;
+    color: #1c1c21;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.625rem;
+    max-inline-size: 31.25rem;
+    min-block-size: 8.75rem;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .btn__card {
+    padding: 0.375rem 2.5rem;
+  }
+
+  .cardbtn__container {
+    margin: 0;
+    padding: 1.875rem 0 0 11.875rem;
+  }
+
+  .js {
+    display: flex;
+    background-color: white;
+    color: #1c1c21;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.3125rem;
+    max-inline-size: 31.25rem;
+    min-block-size: 9.375rem;
+  }
+  .js__img {
+    border-radius: 0.5rem;
+    margin: 0.4375rem 0 0 0;
+  }
+
+  .cardbtn__container__js {
+    margin: 0;
+    padding: 1.5625rem 0 0 11.25rem;
+  }
+
+  .py {
+    display: flex;
+    background-color: white;
+    color: #1c1c21;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding-left: 0.3125rem;
+    max-inline-size: 31.25rem;
+    min-block-size: 9.375rem;
+  }
+
+  .cardbtn__container__py {
+    padding: 1.875rem 0 0 12rem;
+  }
+
+  .csharp {
+    display: flex;
+    background-color: white;
+    color: #1c1c21;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding-left: 0.3125rem;
+    max-inline-size: 31.25rem;
+    min-block-size: 9.375rem;
+  }
+
+  .csharp__img {
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+  }
+
+  .cardbtn__container__csharp {
+    padding: 1.875rem 0 0 13.25rem;
+  }
+
+  .weather__web__app__hidden,
+  .img__upload__hidden,
+  .blog__card__hidden,
+  .library__mng__sys__hidden {
+    display: none;
+  }
+
+  .html__website,
+  .img__grid__layout,
+  .ecommerce__api,
+  .calculator__app {
+    min-inline-size: 31.25rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .brd__footer {
+    margin-top: 0.9375rem;
+    margin-bottom: 0rem;
+    min-inline-size: 31.25rem;
+  }
+
+  footer {
+    min-inline-size: 30rem;
+  }
+}
