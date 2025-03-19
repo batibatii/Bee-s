@@ -1,3 +1,4 @@
+/* You had to repeat some styles in multiple files. That's not a very scalable approach for a growing project. Instead, add standard styles into one styles file (something like styles.css or main.css), then add it to all html files. Apart from it, you can link additional css files with styles only relevant for specific pages. Just make sure to add the second (specific) file below the first one. */
 * {
   box-sizing: border-box;
 }
@@ -188,6 +189,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* If there's a case where you select multiple classes and add the same styles to them, it means that you just need to use one class. Also, add a bit more padding inside the card and maybe try to make the alignment of the text and the button the same (left or center). */
 .html5,
 .css,
 .js,
